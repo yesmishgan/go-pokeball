@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dummy;
+
+option go_package = "github.com/yesmishgan/go-project-template/pkg/api/account/account";
+
+service DummyService {
+  rpc Ping(PingRequest) returns (PingResponse) {}
+}
+
+message PingRequest {
+}
+
+message PingResponse {
+}
