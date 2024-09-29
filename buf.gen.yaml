@@ -1,0 +1,33 @@
+version: v1
+managed:
+  enabled: true
+
+plugins:
+  - plugin: go
+    out: internal/pb
+    opt: paths=source_relative
+    path: bin/protoc-gen-go
+    strategy: directory
+  - plugin: go-grpc
+    out: internal/pb
+    opt: paths=source_relative
+    path: bin/protoc-gen-go-grpc
+    strategy: directory
+  - plugin: grpc-gateway
+    out: internal/pb
+    opt:
+      - paths=source_relative
+      - generate_unbound_methods=true
+    path: bin/protoc-gen-grpc-gateway
+    strategy: directory
+  - plugin: openapiv2
+    out: internal/pb
+    opt: generate_unbound_methods=true
+    path: bin/protoc-gen-openapiv2
+    strategy: directory
+  - plugin: bomboglot
+    out: internal/pb
+    opt:
+      - paths=source_relative
+    path: bin/protoc-gen-bomboglot
+    strategy: directory
