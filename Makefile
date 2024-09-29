@@ -5,6 +5,8 @@ export GOOSE_BIN?=$(GOBIN)/goose
 export LOCAL_BIN:=$(CURDIR)/bin
 export MIGRATIONS_DIR=./migrations
 
+include setup.mk
+
 bin-deps:
 	$(info Installing binary dependencies...)
 	go install github.com/yesmishgan/protoc-gen-bomboglot@v0.0.1
