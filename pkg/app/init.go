@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/yesmishgan/go-project-template/pkg/swaggway"
+	"github.com/yesmishgan/go-pokeball/pkg/swaggway"
 )
 
 func (a *App) initPublicHTTPHandlers() {

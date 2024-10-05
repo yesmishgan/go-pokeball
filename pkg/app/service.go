@@ -9,7 +9,7 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"
 
-	"github.com/yesmishgan/go-project-template/pkg/mergemap"
+	"github.com/yesmishgan/go-pokeball/pkg/mergemap"
 )
 
 // Service is a registerable collection of endpoints.

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package dummy;
 
-option go_package = "github.com/yesmishgan/go-project-template/pkg/api/account/account";
+option go_package = "github.com/yesmishgan/go-pokeball/pkg/api/account/account";
 
 service DummyService {
   rpc Ping(PingRequest) returns (PingResponse) {}
